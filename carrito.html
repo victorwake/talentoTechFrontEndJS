@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Fragancias</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li class="cart-icon">
+                    <a href="carrito.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+        <h1>Carrito de Compras</h1>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart-message">Tu carrito está vacío</p>
+        </div>
+        <div class="cart-summary">
+            <h3>Resumen de Compra</h3>
+            <div class="summary-details">
+                <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                <p>Envío: <span id="shipping">$0.00</span></p>
+                <p class="total">Total: <span id="total">$0.00</span></p>
+            </div>
+            <button class="checkout-btn">Proceder al Pago</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tienda de Fragancias. Victor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
